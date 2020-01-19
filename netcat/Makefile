@@ -113,6 +113,8 @@ next:
 generic:
 	make -e $(ALL) $(MFLAGS) XFLAGS='-DGENERIC -DGAPING_SECURITY_HOLE' STATIC=
 
+generic32: 
+	make -e $(ALL) $(MFLAGS) XFLAGS='-DGENERIC -DGAPING_SECURITY_HOLE' STATIC= CFLAGS='-m32' CXXFLAGS='-m32' LDFLAGS='-m32'
 # Still at large: dgux dynix ???
 
 ### RANDOM
